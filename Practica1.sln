@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CruzControles", "ControlesC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaControles", "PruebaControles\PruebaControles.csproj", "{F6CB1CE7-6F60-43AD-8F4A-D0DBF35D7107}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumeroPrimo", "NumeroPrimo\NumeroPrimo.csproj", "{3B754BAB-14BB-4365-B4E7-7256FCBF8130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PractNumerosPrimos", "PractNumerosPrimos\PractNumerosPrimos.csproj", "{F54A59BA-C613-4436-AB8A-63ECA55C7927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{F6CB1CE7-6F60-43AD-8F4A-D0DBF35D7107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6CB1CE7-6F60-43AD-8F4A-D0DBF35D7107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6CB1CE7-6F60-43AD-8F4A-D0DBF35D7107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B754BAB-14BB-4365-B4E7-7256FCBF8130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B754BAB-14BB-4365-B4E7-7256FCBF8130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B754BAB-14BB-4365-B4E7-7256FCBF8130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B754BAB-14BB-4365-B4E7-7256FCBF8130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54A59BA-C613-4436-AB8A-63ECA55C7927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54A59BA-C613-4436-AB8A-63ECA55C7927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54A59BA-C613-4436-AB8A-63ECA55C7927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54A59BA-C613-4436-AB8A-63ECA55C7927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
