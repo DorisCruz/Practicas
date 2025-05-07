@@ -6,26 +6,22 @@
 
     <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="FillAndExpand">
 
-        <!-- Título -->
         <Label Text="Configuración" 
                FontSize="20"
                FontAttributes="Bold"
                HorizontalOptions="Center"
                Margin="0,0,0,10"/>
 
-        <!-- Notificaciones -->
         <HorizontalStackLayout Spacing="15" VerticalOptions="Center">
             <Switch VerticalOptions="Center"/>
             <Label Text="Notificaciones" VerticalOptions="Center"/>
         </HorizontalStackLayout>
 
-        <!-- Cambiar Tema -->
         <Button Text="Cambiar tema"
                 HeightRequest="40"
                 CornerRadius="5"
                 Margin="0,15,0,0"/>
 
-        <!-- Espaciador para empujar el botón hacia abajo -->
         <Label />
 
         <Label Text="Cerrar Sesión"

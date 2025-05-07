@@ -9,17 +9,17 @@
 
         private async void IrListaContactos(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Contactos());
+            await Shell.Current.GoToAsync(nameof(Contactos));
         }
 
         private async void IrCrearContacto(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CrearContacto());
+            await Shell.Current.GoToAsync(nameof(CrearContacto));
         }
 
         private async void IrConfiguracion(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Configuracion());
+            await Shell.Current.GoToAsync(nameof(Configuracion));
         }
     }
 }

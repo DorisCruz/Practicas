@@ -15,10 +15,12 @@ namespace layout
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
-
+            builder.Services.AddTransient<LoadingPage>();
+            builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<Configuracion>();
+            builder.Services.AddTransient<Contactos>();
+            builder.Services.AddTransient<CrearContacto>();
             return builder.Build();
         }
     }

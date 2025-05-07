@@ -5,18 +5,21 @@
         public AppShell()
         {
             InitializeComponent();
-
             RegisterRoutes();
         }
 
         private void RegisterRoutes()
         {
-            Routing.RegisterRoute("home", typeof(MainPage));
-            Routing.RegisterRoute("login", typeof(LoginPage));
-            Routing.RegisterRoute(nameof(CrearContacto), typeof(CrearContacto));
-            Routing.RegisterRoute(nameof(Contactos), typeof(Contactos));
-            Routing.RegisterRoute(nameof(Configuracion), typeof(Configuracion));
+            Routing.RegisterRoute("crearcontacto", typeof(CrearContacto));
+            Routing.RegisterRoute("contactos", typeof(Contactos));
 
+            Routing.RegisterRoute("contactos/detalles", typeof(DetalleContactoPage));
+
+            Debug.WriteLine("Rutas registradas:");
+            foreach (var route in Routing.GetRouteNames())
+            {
+                Debug.WriteLine($"- {route}");
+            }
         }
     }
 }

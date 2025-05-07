@@ -9,6 +9,6 @@ public partial class App : Application
 
     protected override Window CreateWindow(IActivationState? activationState)
     {
-        return new Window(new LoadingPage()); // Punto de entrada inicial
+        return new Window(new LoadingPage()); 
     }
 }

@@ -7,29 +7,33 @@
     Shell.FlyoutBehavior="Flyout"
     Title="Agenda Personal">
 
-    <!-- Flyout Header (Opcional) -->
     <Shell.FlyoutHeader>
         <VerticalStackLayout Padding="20">
             <Label Text="Mi Agenda" FontSize="20" FontAttributes="Bold"/>
         </VerticalStackLayout>
     </Shell.FlyoutHeader>
 
-    <!-- Páginas principales -->
     <TabBar>
-        <ShellContent 
-            Title="Inicio" 
-            Icon="home.png" 
-            ContentTemplate="{DataTemplate local:MainPage}" 
-            Route="home" />
+        <Tab Title="Inicio" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="home" />
+        </Tab>
 
-        <ShellContent 
-            Title="Configuración" 
-            Icon="settings.png" 
-            ContentTemplate="{DataTemplate local:Configuracion}" 
-            Route="settings" />
+        <Tab Title="Contactos" Icon="contacts.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Contactos}" Route="contactos" />
+        </Tab>
+
+        <Tab Title="Configuración" Icon="settings.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Configuracion}" Route="settings" />
+        </Tab>
     </TabBar>
 
-    <ShellContent
-    Route="login"
-    ContentTemplate="{DataTemplate local:LoginPage}" />
+    <ShellContent 
+        Route="login" 
+        ContentTemplate="{DataTemplate local:LoginPage}" 
+        Shell.FlyoutItemIsVisible="False" />
+
+    <ShellContent 
+        Route="crearcontacto" 
+        ContentTemplate="{DataTemplate local:CrearContacto}" 
+        Shell.FlyoutItemIsVisible="False" />
 </Shell>
