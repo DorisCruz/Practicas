@@ -7,11 +7,10 @@ public partial class LoadingPage : ContentPage
         InitializeComponent();
         CheckAuthStatus();
     }
-
     private async void CheckAuthStatus()
     {
         await Task.Delay(2000);
         var hasAuth = await SecureStorage.GetAsync("hasAuth");
-        await Shell.Current.GoToAsync(hasAuth == "true" ? "//home" : "//login"); // Correcto
+        await Shell.Current.GoToAsync((hasAuth != null && hasAuth == "true") ? "//home" : "//login");
     }
 }

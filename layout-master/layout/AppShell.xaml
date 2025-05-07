@@ -30,6 +30,6 @@
     </TabBar>
 
     <ShellContent
-    Route="LoginPage"
+    Route="login"
     ContentTemplate="{DataTemplate local:LoginPage}" />
 </Shell>
