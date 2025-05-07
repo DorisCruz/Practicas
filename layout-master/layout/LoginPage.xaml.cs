@@ -9,17 +9,16 @@ public partial class LoginPage : ContentPage
 
     private async void OnLoginButtonClicked(object sender, EventArgs e)
     {
-        string username = UsernameEntry.Text;
-        string password = PasswordEntry.Text;
-
-        if (IsValidUser(username, password))
+        if (IsCredentialCorrect(Username.Text, Password.Text))
         {
+            Preferences.Set("UsuarioActual", Username.Text.Trim());
             await SecureStorage.SetAsync("hasAuth", "true");
-            await Shell.Current.GoToAsync("//home"); 
+            await Shell.Current.GoToAsync("//home");
         }
         else
         {
-            await DisplayAlert("Error", "Credenciales incorrectas", "OK");
+            Preferences.Remove("UsuarioActual");
+            await DisplayAlert("Login failed", "Username or password if invalid", "Try again");
         }
     }
 

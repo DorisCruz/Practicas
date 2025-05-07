@@ -7,14 +7,11 @@ namespace layout
         public AppShell()
         {
             InitializeComponent();
-            RegisterRoutes();
-        }
-
-        private void RegisterRoutes()
-        {
+           
             Routing.RegisterRoute("crearcontacto", typeof(CrearContacto));
             Routing.RegisterRoute("contactos", typeof(Contactos));
-
+            Routing.RegisterRoute("home", typeof(MainPage));
+            Routing.RegisterRoute("login", typeof(LoginPage));
         }
     }
 }
