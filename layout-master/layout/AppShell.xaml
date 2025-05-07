@@ -5,11 +5,31 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:layout"
     Shell.FlyoutBehavior="Flyout"
-    Title="layout">
+    Title="Agenda Personal">
+
+    <!-- Flyout Header (Opcional) -->
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Mi Agenda" FontSize="20" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <!-- Páginas principales -->
+    <TabBar>
+        <ShellContent 
+            Title="Inicio" 
+            Icon="home.png" 
+            ContentTemplate="{DataTemplate local:MainPage}" 
+            Route="home" />
+
+        <ShellContent 
+            Title="Configuración" 
+            Icon="settings.png" 
+            ContentTemplate="{DataTemplate local:Configuracion}" 
+            Route="settings" />
+    </TabBar>
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    Route="LoginPage"
+    ContentTemplate="{DataTemplate local:LoginPage}" />
 </Shell>
