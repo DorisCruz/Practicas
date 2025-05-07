@@ -15,13 +15,6 @@ namespace layout
             Routing.RegisterRoute("crearcontacto", typeof(CrearContacto));
             Routing.RegisterRoute("contactos", typeof(Contactos));
 
-            Routing.RegisterRoute("contactos/detalles", typeof(DetalleContactoPage));
-
-            Debug.WriteLine("Rutas registradas:");
-            foreach (var route in Routing.GetRouteNames())
-            {
-                Debug.WriteLine($"- {route}");
-            }
         }
     }
 }

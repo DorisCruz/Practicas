@@ -28,11 +28,11 @@
     </TabBar>
 
     <ShellContent 
-        Route="login" 
-        ContentTemplate="{DataTemplate local:LoginPage}" 
-        Shell.FlyoutItemIsVisible="False" />
+    Route="crearcontacto" 
+        ContentTemplate="{DataTemplate local:CrearContacto}" 
+    Shell.FlyoutItemIsVisible="False"/>
 
-    <ShellContent 
+        <ShellContent 
         Route="crearcontacto" 
         ContentTemplate="{DataTemplate local:CrearContacto}" 
         Shell.FlyoutItemIsVisible="False" />
