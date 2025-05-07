@@ -5,12 +5,24 @@ public partial class LoadingPage : ContentPage
     public LoadingPage()
     {
         InitializeComponent();
-        CheckAuthStatus();
     }
-    private async void CheckAuthStatus()
+
+    protected override async void OnAppearing()
     {
-        await Task.Delay(2000);
-        var hasAuth = await SecureStorage.GetAsync("hasAuth");
-        await Shell.Current.GoToAsync((hasAuth != null && hasAuth == "true") ? "//home" : "//login");
+        base.OnAppearing();
+        try
+        {
+            await Task.Delay(2000); // Simula carga inicial
+            var hasAuth = await SecureStorage.GetAsync("hasAuth");
+            Console.WriteLine($"Debug - hasAuth: {hasAuth}"); // Log para debug
+
+            var targetRoute = (hasAuth != null && hasAuth == "true") ? "//home" : "//login";
+            await Shell.Current.GoToAsync(targetRoute);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex}");
+            await Shell.Current.GoToAsync("//login"); // Fallback
+        }
     }
 }
