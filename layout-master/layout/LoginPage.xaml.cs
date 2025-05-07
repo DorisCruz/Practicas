@@ -22,7 +22,7 @@ public partial class LoginPage : ContentPage
         }
     }
 
-    private bool IsValidUser(string username, string password)
+    private bool IsCredentialCorrect(string username, string password)
     {
         return username == "doris" && password == "12345"; 
     }
