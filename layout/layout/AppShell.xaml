@@ -36,8 +36,4 @@
         Route="crearcontacto" 
         ContentTemplate="{DataTemplate local:CrearContacto}" 
         Shell.FlyoutItemIsVisible="False" />
-
-    <ShellContent
-    Route="login"
-    ContentTemplate="{DataTemplate local:LoginPage}" />
 </Shell>

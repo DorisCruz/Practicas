@@ -12,9 +12,6 @@ namespace layout
             Routing.RegisterRoute("contactos", typeof(Contactos));
             Routing.RegisterRoute("home", typeof(MainPage));
             Routing.RegisterRoute("login", typeof(LoginPage));
-            Routing.RegisterRoute("configuracion", typeof(Configuracion));
-            
-
         }
     }
 }
