@@ -12,9 +12,9 @@
                    WidthRequest="300">
 
             <Label Text="Crear Contacto" 
-                   FontSize="18"
+                   FontSize="19"
                    FontAttributes="Bold"
-                   Margin="0,0,0,15"/>
+                   Margin="0,0,0,25"/>
             
             <Entry Placeholder="Nombre" 
                    WidthRequest="250"
@@ -41,6 +41,7 @@
             <Button Text="Guardar Contacto" 
                    WidthRequest="250"
                    HeightRequest="45"
+                    BackgroundColor="DarkBlue"
                    CornerRadius="5"/>
         </FlexLayout>
     </Grid>

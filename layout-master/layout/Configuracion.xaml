@@ -20,6 +20,7 @@
         <Button Text="Cambiar tema"
                 HeightRequest="40"
                 CornerRadius="5"
+                BackgroundColor="DarkBlue"
                 Margin="0,15,0,0"/>
 
         <Label />
@@ -28,6 +29,7 @@
                FontSize="14"
                TextColor="Gray"
                HorizontalOptions="Center"
+               FontAttributes="Bold"
                Padding="10">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="OnLogoutTapped" />

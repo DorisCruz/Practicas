@@ -11,21 +11,24 @@
                    FontSize="24"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
-                   Margin="0,0,0,10"/>
+                   Margin="0,0,0,70"/>
             
             <Button Text="Lista de Contactos" 
                     Clicked="IrListaContactos"
                     HeightRequest="50"
+                    BackgroundColor="DarkBlue"
                     CornerRadius="8"/>
 
             <Button Text="Crear Nuevo Contacto" 
                     Clicked="IrCrearContacto"
                     HeightRequest="50"
+                    BackgroundColor="DarkBlue"
                     CornerRadius="8"/>
 
             <Button Text="Configuración" 
                     Clicked="IrConfiguracion"
                     HeightRequest="50"
+                    BackgroundColor="DarkBlue"
                     CornerRadius="8"
                     />
         </VerticalStackLayout>
