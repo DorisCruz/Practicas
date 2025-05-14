@@ -29,6 +29,7 @@
                 FontSize="18"
                 TextColor="White" 
                 BackgroundColor="DarkBlue"
+                Clicked="OnLoginButtonClicked"
                 HorizontalOptions="FillAndExpand" />
 
         <!-- Enlaces de Crear Cuenta y Recuperar Contraseña -->

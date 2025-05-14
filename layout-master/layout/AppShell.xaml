@@ -13,6 +13,8 @@
         </VerticalStackLayout>
     </Shell.FlyoutHeader>
 
+
+
     <TabBar>
         <Tab Title="Inicio" Icon="home.png">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="home" />
