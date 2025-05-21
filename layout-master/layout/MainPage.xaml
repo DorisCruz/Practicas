@@ -17,19 +17,19 @@
                     Clicked="IrListaContactos"
                     HeightRequest="50"
                     BackgroundColor="DarkBlue"
-                    CornerRadius="8"/>
+                    CornerRadius="20"/>
 
             <Button Text="Crear Nuevo Contacto" 
                     Clicked="IrCrearContacto"
                     HeightRequest="50"
                     BackgroundColor="DarkBlue"
-                    CornerRadius="8"/>
+                    CornerRadius="20"/>
 
             <Button Text="Configuración" 
                     Clicked="IrConfiguracion"
                     HeightRequest="50"
                     BackgroundColor="DarkBlue"
-                    CornerRadius="8"
+                    CornerRadius="20"
                     />
         </VerticalStackLayout>
     </Grid>
